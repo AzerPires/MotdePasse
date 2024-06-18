@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Générateur de mot de passe, gerador password">
     <title>Mot de Passe</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <main class="container-input">
+        <span>Taille <span id="valor"></span>caractères</span>
+        <input id="slider" class="slider" type="range" min="8" max="25"/>
+
+        <button id="button" class="button-cta">Créer un Mot de Passe</button>
+
+    </main>   
+    <div ID="container-password" class="container-password hide">
+        <span class="titre">Votre mot de passe généré était : </span>
+        <span id="password" class="password">123123123123123 </span>
+        <span> Clique sur le mot de passe pour copier. 👆 </span>
+    </div> 
 </body>
 </html>
